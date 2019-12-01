@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<UserSend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>1</Id>
+  <Login>Alex</Login>
+  <Password>12345</Password>
+  <Lastname>Karpenkov</Lastname>
+  <Firstname>Alex</Firstname>
+  <Patronymic>Vitalievich</Patronymic>
+  <AdminRights>Admin</AdminRights>
+</UserSend>

@@ -1,0 +1,25 @@
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\bin\Debug\ClientApplication.exe.config
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\bin\Debug\ClientApplication.exe
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\bin\Debug\ClientApplication.pdb
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csprojAssemblyReference.cache
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Auth.resources
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Main.resources
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Properties.Resources.resources
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csproj.GenerateResource.cache
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csproj.CoreCompileInputs.cache
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.exe
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.pdb
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\bin\Debug\ClientApplication.exe.config
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\bin\Debug\ClientApplication.exe
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\bin\Debug\ClientApplication.pdb
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csprojAssemblyReference.cache
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Auth.resources
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Main.resources
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Properties.Resources.resources
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csproj.GenerateResource.cache
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csproj.CoreCompileInputs.cache
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.exe
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.pdb
+F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Faculty.resources
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Faculty.resources
+C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.AddFaculty.resources
