@@ -23,3 +23,25 @@ F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication
 F:\Учёба\Курсовые проекты\ComboApplication\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Faculty.resources
 C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Faculty.resources
 C:\Users\Komp\Desktop\ClientApplication\ClientApplication\obj\Debug\ClientApplication.AddFaculty.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\bin\Debug\ClientApplication.exe.config
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\bin\Debug\ClientApplication.exe
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\bin\Debug\ClientApplication.pdb
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csprojAssemblyReference.cache
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.AddFaculty.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Auth.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Faculty.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Main.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Properties.Resources.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csproj.GenerateResource.cache
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csproj.CoreCompileInputs.cache
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.exe
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.pdb
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Specialty.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.AddSpecialty.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Journal.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Discipline.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Group.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Student.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Exam.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.StudPerform.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.StudPerformGroup.resources

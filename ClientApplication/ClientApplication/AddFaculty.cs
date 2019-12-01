@@ -19,16 +19,16 @@ namespace ClientApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string name = textBox1.Text;
-            string qu = textBox2.Text;
+            string headman = textBox2.Text;
             string adrress = textBox3.Text;
 
-            if(ServerMananger.Add("Факультеты", new string[] { name, qu, adrress }))
+            if(ServerMananger.Add("Факультеты", new string[] { name, headman, adrress }))
             {
                 MessageBox.Show("Данные успешно добавлены", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();

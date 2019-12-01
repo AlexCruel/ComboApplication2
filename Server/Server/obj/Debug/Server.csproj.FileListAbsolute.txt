@@ -5,3 +5,10 @@ C:\Users\Komp\Desktop\Server\Server\obj\Debug\Server.csprojAssemblyReference.cac
 C:\Users\Komp\Desktop\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 C:\Users\Komp\Desktop\Server\Server\obj\Debug\Server.exe
 C:\Users\Komp\Desktop\Server\Server\obj\Debug\Server.pdb
+F:\Учёба\Курсовые проекты\ComboApplication2\Server\Server\bin\Debug\Server.exe.config
+F:\Учёба\Курсовые проекты\ComboApplication2\Server\Server\bin\Debug\Server.exe
+F:\Учёба\Курсовые проекты\ComboApplication2\Server\Server\bin\Debug\Server.pdb
+F:\Учёба\Курсовые проекты\ComboApplication2\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+F:\Учёба\Курсовые проекты\ComboApplication2\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+F:\Учёба\Курсовые проекты\ComboApplication2\Server\Server\obj\Debug\Server.exe
+F:\Учёба\Курсовые проекты\ComboApplication2\Server\Server\obj\Debug\Server.pdb

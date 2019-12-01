@@ -52,6 +52,24 @@
     <Compile Include="AddFaculty.Designer.cs">
       <DependentUpon>AddFaculty.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddSpecialty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSpecialty.Designer.cs">
+      <DependentUpon>AddSpecialty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Discipline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discipline.Designer.cs">
+      <DependentUpon>Discipline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam.Designer.cs">
+      <DependentUpon>Exam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Faculty.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +88,18 @@
     <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group.Designer.cs">
+      <DependentUpon>Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Journal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Journal.Designer.cs">
+      <DependentUpon>Journal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServerMananger.cs" />
@@ -79,8 +109,35 @@
     <Compile Include="Specialty.Designer.cs">
       <DependentUpon>Specialty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudPerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudPerform.Designer.cs">
+      <DependentUpon>StudPerform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudPerformGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudPerformGroup.Designer.cs">
+      <DependentUpon>StudPerformGroup.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddFaculty.resx">
       <DependentUpon>AddFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSpecialty.resx">
+      <DependentUpon>AddSpecialty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Discipline.resx">
+      <DependentUpon>Discipline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam.resx">
+      <DependentUpon>Exam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Auth.resx">
       <DependentUpon>Auth.cs</DependentUpon>
@@ -91,6 +148,12 @@
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Group.resx">
+      <DependentUpon>Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journal.resx">
+      <DependentUpon>Journal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -100,6 +163,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Specialty.resx">
+      <DependentUpon>Specialty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudPerform.resx">
+      <DependentUpon>StudPerform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudPerformGroup.resx">
+      <DependentUpon>StudPerformGroup.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

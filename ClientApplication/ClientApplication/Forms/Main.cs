@@ -183,5 +183,47 @@ namespace ClientApplication
             Environment.Exit(0);
             Auth.Close();
         }
+
+        private void buttonJournal_Click(object sender, EventArgs e)
+        {
+            Journal form = new Journal();
+            form.Show();
+        }
+
+        private void buttonDiscipline_Click(object sender, EventArgs e)
+        {
+            Discipline form = new Discipline();
+            form.Show();
+        }
+
+        private void buttonGroup_Click(object sender, EventArgs e)
+        {
+            Group form = new Group();
+            form.Show();
+        }
+
+        private void buttonStudent_Click(object sender, EventArgs e)
+        {
+            Student form = new Student();
+            form.Show();
+        }
+
+        private void buttonExam_Click(object sender, EventArgs e)
+        {
+            Exam form = new Exam();
+            form.Show();
+        }
+
+        private void buttonAcPerform_Click(object sender, EventArgs e)
+        {
+            StudPerform form = new StudPerform();
+            form.Show();
+        }
+
+        private void buttonGrPerform_Click(object sender, EventArgs e)
+        {
+            StudPerformGroup form = new StudPerformGroup();
+            form.Show();
+        }
     }
 }

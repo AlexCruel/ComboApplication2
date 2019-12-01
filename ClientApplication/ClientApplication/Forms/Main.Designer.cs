@@ -155,7 +155,7 @@
             this.flowLayoutPanelTeacher.MaximumSize = new System.Drawing.Size(204, 192);
             this.flowLayoutPanelTeacher.MinimumSize = new System.Drawing.Size(204, 63);
             this.flowLayoutPanelTeacher.Name = "flowLayoutPanelTeacher";
-            this.flowLayoutPanelTeacher.Size = new System.Drawing.Size(204, 63);
+            this.flowLayoutPanelTeacher.Size = new System.Drawing.Size(204, 64);
             this.flowLayoutPanelTeacher.TabIndex = 4;
             // 
             // buttonTeacher
@@ -190,6 +190,7 @@
             this.buttonJournal.TabIndex = 3;
             this.buttonJournal.Text = "Журнал преподавателя";
             this.buttonJournal.UseVisualStyleBackColor = false;
+            this.buttonJournal.Click += new System.EventHandler(this.buttonJournal_Click);
             // 
             // buttonDiscipline
             // 
@@ -206,17 +207,18 @@
             this.buttonDiscipline.TabIndex = 5;
             this.buttonDiscipline.Text = "Дисциплины";
             this.buttonDiscipline.UseVisualStyleBackColor = false;
+            this.buttonDiscipline.Click += new System.EventHandler(this.buttonDiscipline_Click);
             // 
             // flowLayoutPanelGroup
             // 
             this.flowLayoutPanelGroup.Controls.Add(this.buttonGroupInfo);
             this.flowLayoutPanelGroup.Controls.Add(this.buttonGroup);
             this.flowLayoutPanelGroup.Controls.Add(this.buttonStudent);
-            this.flowLayoutPanelGroup.Location = new System.Drawing.Point(3, 141);
+            this.flowLayoutPanelGroup.Location = new System.Drawing.Point(3, 142);
             this.flowLayoutPanelGroup.MaximumSize = new System.Drawing.Size(204, 191);
             this.flowLayoutPanelGroup.MinimumSize = new System.Drawing.Size(204, 63);
             this.flowLayoutPanelGroup.Name = "flowLayoutPanelGroup";
-            this.flowLayoutPanelGroup.Size = new System.Drawing.Size(204, 63);
+            this.flowLayoutPanelGroup.Size = new System.Drawing.Size(204, 65);
             this.flowLayoutPanelGroup.TabIndex = 5;
             // 
             // buttonGroupInfo
@@ -251,6 +253,7 @@
             this.buttonGroup.TabIndex = 3;
             this.buttonGroup.Text = "Группы";
             this.buttonGroup.UseVisualStyleBackColor = false;
+            this.buttonGroup.Click += new System.EventHandler(this.buttonGroup_Click);
             // 
             // buttonStudent
             // 
@@ -267,6 +270,7 @@
             this.buttonStudent.TabIndex = 4;
             this.buttonStudent.Text = "Студенты";
             this.buttonStudent.UseVisualStyleBackColor = false;
+            this.buttonStudent.Click += new System.EventHandler(this.buttonStudent_Click);
             // 
             // flowLayoutPanelJournal
             // 
@@ -274,11 +278,11 @@
             this.flowLayoutPanelJournal.Controls.Add(this.buttonExam);
             this.flowLayoutPanelJournal.Controls.Add(this.buttonAcPerform);
             this.flowLayoutPanelJournal.Controls.Add(this.buttonGrPerform);
-            this.flowLayoutPanelJournal.Location = new System.Drawing.Point(3, 210);
+            this.flowLayoutPanelJournal.Location = new System.Drawing.Point(3, 213);
             this.flowLayoutPanelJournal.MaximumSize = new System.Drawing.Size(204, 251);
             this.flowLayoutPanelJournal.MinimumSize = new System.Drawing.Size(204, 63);
             this.flowLayoutPanelJournal.Name = "flowLayoutPanelJournal";
-            this.flowLayoutPanelJournal.Size = new System.Drawing.Size(204, 63);
+            this.flowLayoutPanelJournal.Size = new System.Drawing.Size(204, 65);
             this.flowLayoutPanelJournal.TabIndex = 6;
             // 
             // buttonJournalPerform
@@ -313,6 +317,7 @@
             this.buttonExam.TabIndex = 3;
             this.buttonExam.Text = "Экзамен";
             this.buttonExam.UseVisualStyleBackColor = false;
+            this.buttonExam.Click += new System.EventHandler(this.buttonExam_Click);
             // 
             // buttonAcPerform
             // 
@@ -329,6 +334,7 @@
             this.buttonAcPerform.TabIndex = 4;
             this.buttonAcPerform.Text = "Успеваемость студентов";
             this.buttonAcPerform.UseVisualStyleBackColor = false;
+            this.buttonAcPerform.Click += new System.EventHandler(this.buttonAcPerform_Click);
             // 
             // buttonGrPerform
             // 
@@ -345,6 +351,7 @@
             this.buttonGrPerform.TabIndex = 5;
             this.buttonGrPerform.Text = "Успеваемость по группам";
             this.buttonGrPerform.UseVisualStyleBackColor = false;
+            this.buttonGrPerform.Click += new System.EventHandler(this.buttonGrPerform_Click);
             // 
             // timerTeacher
             // 

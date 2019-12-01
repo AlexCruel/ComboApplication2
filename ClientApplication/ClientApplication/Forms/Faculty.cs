@@ -15,10 +15,6 @@ namespace ClientApplication
     public partial class Faculty : Form
     {
 
-        private void LoadDataServ()
-        {
-        }
-
         public Faculty()
         {
             InitializeComponent();
@@ -35,11 +31,6 @@ namespace ClientApplication
                 dataGridView1.DataSource = dst.Tables[0];
                 dataGridView1.Columns[0].Visible = false;
             }
-        }
-
-        private void Faculty_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)

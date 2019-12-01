@@ -15,6 +15,8 @@ namespace ClientApplication
             LOGIN=0,
             SELECT,
             ADD,
+            SELECTCOLUMN,
+            ADDSPEC,
             UPDATE,
             EXEC
         }
@@ -60,12 +62,35 @@ namespace ClientApplication
             return reader.ReadString();
         }
 
+        public static string SelectColumn(string tablename)
+        {
+            writer.Write((int)OPERATIONS.SELECTCOLUMN);
+            writer.Write(tablename);
+
+            return reader.ReadString();
+        }
+
         public static bool Add(string tablename, string[] args)
         {
             writer.Write((int)OPERATIONS.ADD);
             writer.Write(tablename);
             writer.Write(args.Length);
             
+            foreach (string item in args)
+            {
+                writer.Write(item);
+            }
+
+
+            return reader.ReadBoolean();
+        }
+
+        public static bool AddSpec(string tablename, string[] args)
+        {
+            writer.Write((int)OPERATIONS.ADDSPEC);
+            writer.Write(tablename);
+            writer.Write(args.Length);
+
             foreach (string item in args)
             {
                 writer.Write(item);
