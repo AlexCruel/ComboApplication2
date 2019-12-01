@@ -22,12 +22,12 @@ namespace ClientApplication
         private void UpdateData()
         {
             DataSet dst = new DataSet();
-            dst.ReadXml(new StringReader(ServerMananger.Select("[St_AcPerform]")));
+            dst.ReadXml(new StringReader(ServerMananger.Select("[St_AcPerformance]")));
 
             if (dst.Tables.Count > 0)
             {
                 dataGridView1.DataSource = dst.Tables[0];
-                //dataGridView1.Columns[0].Visible = false;
+                dataGridView1.Columns[0].Visible = false;
             }
         }
     }

@@ -22,7 +22,7 @@ namespace ClientApplication
         private void UpdateData()
         {
             DataSet dst = new DataSet();
-            dst.ReadXml(new StringReader(ServerMananger.Select("Group")));
+            dst.ReadXml(new StringReader(ServerMananger.Select("Groups")));
 
             if (dst.Tables.Count > 0)
             {
