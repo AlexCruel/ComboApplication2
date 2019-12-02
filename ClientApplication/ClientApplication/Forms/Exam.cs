@@ -11,23 +11,21 @@ using System.Windows.Forms;
 
 namespace ClientApplication
 {
-    public partial class Journal : Form
+    public partial class Exam : Form
     {
-        public Journal()
+        public Exam()
         {
             InitializeComponent();
             UpdateData();
             LoadInfoGroup();
-            LoadInfoTeacher();
             LoadInfoStudent();
             LoadInfoDiscipline();
-            LoadInfoFC();
         }
 
         private void UpdateData()
         {
             DataSet dst = new DataSet();
-            dst.ReadXml(new StringReader(ServerMananger.Select("Journal")));
+            dst.ReadXml(new StringReader(ServerMananger.Select("Exam")));
 
             if (dst.Tables.Count > 0)
             {
@@ -43,16 +41,6 @@ namespace ClientApplication
             comboBoxGroup.DataSource = dst.Tables["g"];
             comboBoxGroup.ValueMember = dst.Tables["g"].Columns[0].ColumnName;
             comboBoxGroup.DisplayMember = dst.Tables["g"].Columns[2].ColumnName;
-        }
-
-        private void LoadInfoTeacher()
-        {
-            DataSet dst = new DataSet();
-            dst.ReadXml(new StringReader(ServerMananger.SelectColumn("Преподаватели")));
-
-            comboBoxTeacher.DataSource = dst.Tables["t"];
-            comboBoxTeacher.ValueMember = dst.Tables["t"].Columns[0].ColumnName;
-            comboBoxTeacher.DisplayMember = dst.Tables["t"].Columns[1].ColumnName;
         }
 
         private void LoadInfoStudent()
@@ -75,14 +63,23 @@ namespace ClientApplication
             comboBoxDisc.DisplayMember = dst.Tables["disc"].Columns[1].ColumnName;
         }
 
-        private void LoadInfoFC()
+        private void buttonRecord_Click(object sender, EventArgs e)
         {
-            DataSet dst = new DataSet();
-            dst.ReadXml(new StringReader(ServerMananger.SelectColumn("[Форма контроля]")));
+            string semester = comboBoxSemester.Text;
+            string group = comboBoxGroup.SelectedValue.ToString();
+            string student = comboBoxStud.SelectedValue.ToString();
+            string discipline = comboBoxDisc.SelectedValue.ToString();
+            string mark = comboBoxMark.Text;
 
-            comboBoxFC.DataSource = dst.Tables["fc"];
-            comboBoxFC.ValueMember = dst.Tables["fc"].Columns[0].ColumnName;
-            comboBoxFC.DisplayMember = dst.Tables["fc"].Columns[1].ColumnName;
+
+            if (ServerMananger.Add("Экзамен", new string[] { semester, group, student, discipline, mark }))
+            {
+                MessageBox.Show("Данные успешно добавлены", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Сбой во время операции!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

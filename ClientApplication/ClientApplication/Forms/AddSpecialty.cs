@@ -28,7 +28,6 @@ namespace ClientApplication
         private void button1_Click(object sender, EventArgs e)
         {
             string faculty = comboBox1.SelectedValue.ToString();
-            //string faculty = textBox1.Text;
             string name = textBox2.Text;
             string shotrName = textBox3.Text;
 
