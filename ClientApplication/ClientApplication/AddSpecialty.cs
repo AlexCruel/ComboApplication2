@@ -13,10 +13,11 @@ namespace ClientApplication
 {
     public partial class AddSpecialty : Form
     {
+
         public AddSpecialty()
         {
             InitializeComponent();
-            //LoadInfoFaculty();
+            LoadInfoFaculty();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -26,11 +27,12 @@ namespace ClientApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string faculty = comboBox1.Text;
+            string faculty = comboBox1.SelectedValue.ToString();
+            //string faculty = textBox1.Text;
             string name = textBox2.Text;
             string shotrName = textBox3.Text;
 
-            if (ServerMananger.AddSpec("Специальности", new string[] { faculty, name, shotrName }))
+            if (ServerMananger.Add("Специальности", new string[] { faculty, name, shotrName }))
             {
                 MessageBox.Show("Данные успешно добавлены", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();

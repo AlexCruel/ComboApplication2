@@ -26,9 +26,9 @@ namespace ClientApplication
         {
             string name = textBox1.Text;
             string headman = textBox2.Text;
-            string adrress = textBox3.Text;
+            string address = textBox3.Text;
 
-            if(ServerMananger.Add("Факультеты", new string[] { name, headman, adrress }))
+            if(ServerMananger.Add("Факультеты", new string[] { name, headman, address }))
             {
                 MessageBox.Show("Данные успешно добавлены", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();

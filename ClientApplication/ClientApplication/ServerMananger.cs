@@ -16,7 +16,6 @@ namespace ClientApplication
             SELECT,
             ADD,
             SELECTCOLUMN,
-            ADDSPEC,
             UPDATE,
             EXEC
         }
@@ -76,21 +75,6 @@ namespace ClientApplication
             writer.Write(tablename);
             writer.Write(args.Length);
             
-            foreach (string item in args)
-            {
-                writer.Write(item);
-            }
-
-
-            return reader.ReadBoolean();
-        }
-
-        public static bool AddSpec(string tablename, string[] args)
-        {
-            writer.Write((int)OPERATIONS.ADDSPEC);
-            writer.Write(tablename);
-            writer.Write(args.Length);
-
             foreach (string item in args)
             {
                 writer.Write(item);

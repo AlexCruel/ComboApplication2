@@ -73,49 +73,21 @@ namespace Server
                                 string table = reader.ReadString();
                                 DataSet dst = new DataSet();
                                 SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table}", Program.CONNECTION_STRING);
-                                adapter.Fill(dst, "f");
+                             
+                                if (table == "Факультеты")
+                                    adapter.Fill(dst, "f");
+                                else if (table == "Группы")
+                                    adapter.Fill(dst, "g");
+                                else if (table == "Преподаватели")
+                                    adapter.Fill(dst, "t");
+                                else if (table == "Студенты")
+                                    adapter.Fill(dst, "st");
+                                else if (table == "Дисциплины")
+                                    adapter.Fill(dst, "disc");
+                                else
+                                    adapter.Fill(dst, "fc");
 
                                 writer.Write(dst.GetXml());
-
-                                break;
-                            }
-                        case 4:
-                            {
-                                string table = reader.ReadString();
-                                int length = reader.ReadInt32();
-                                string[] args = new string[length];
-
-                                for (int i = 0; i < length; i++)
-                                {
-                                    args[i] = reader.ReadString();
-                                }
-
-                                string command = $"insert into {table} values({args[0]}";
-
-                                for (int i = 1; i < length; i++)
-                                {
-                                    command += $",{args[i]}";
-                                }
-                                command += ')';
-
-                                SqlCommand sqlCommand = new SqlCommand(command, new SqlConnection(Program.CONNECTION_STRING));
-
-                                bool result = false;
-
-                                try
-                                {
-                                    sqlCommand.Connection.Open();
-                                    sqlCommand.ExecuteNonQuery();
-                                    sqlCommand.Connection.Close();
-                                    result = true;
-                                }
-                                catch (Exception ex)
-                                {
-                                    Console.WriteLine($"{ID}:" + ex.ToString());
-                                    result = false;
-                                }
-
-                                writer.Write(result);
 
                                 break;
                             }
@@ -132,11 +104,11 @@ namespace Server
 
         private void AddOpertion(string table, int length, string[] args)
         {
-            string command = $"insert into {table} values({args[0]}";
+            string command = $"insert into {table} values('{args[0]}'";
 
             for (int i = 1; i < length; i++)
             {
-                command += $",{args[i]}";
+                command += $",'{args[i]}'";
             }
             command += ')';
 
