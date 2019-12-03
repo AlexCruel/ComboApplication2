@@ -75,6 +75,7 @@ namespace ClientApplication
             if (ServerMananger.Add("Экзамен", new string[] { semester, group, student, discipline, mark }))
             {
                 MessageBox.Show("Данные успешно добавлены", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UpdateData();
             }
             else
             {

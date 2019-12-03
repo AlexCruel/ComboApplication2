@@ -91,6 +91,36 @@ namespace Server
 
                                 break;
                             }
+                        case 4:
+                            {
+                                string table = reader.ReadString();
+                                int length = reader.ReadInt32();
+                                string[] args = new string[length];
+
+                                for (int i = 0; i < length; i++)
+                                {
+                                    args[i] = reader.ReadString();
+                                }
+
+                                DataSet dst = new DataSet();
+
+                                if (table == "[St_AcPerformance]")
+                                {
+                                    SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table} where Семестр = '{args[0]}' " +
+                                        $"and КодСтуд = '{args[1]}'", Program.CONNECTION_STRING);
+                                    adapter.Fill(dst);
+                                }
+                                else
+                                {
+                                    SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table} where Семестр = '{args[0]}' and КодГруппы = '{args[1]}' " +
+                                        $"and КодДисц = '{args[2]}'", Program.CONNECTION_STRING);
+                                    adapter.Fill(dst);
+                                }
+
+                                writer.Write(dst.GetXml());
+
+                                break;
+                            }
                     }
                 }
                 catch(Exception ex)

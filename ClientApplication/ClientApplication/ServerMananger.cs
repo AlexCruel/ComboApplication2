@@ -16,8 +16,8 @@ namespace ClientApplication
             SELECT,
             ADD,
             SELECTCOLUMN,
-            UPDATE,
-            EXEC
+            EXEC,
+            UPDATE
         }
 
         private static TcpClient tcpClient;
@@ -44,7 +44,7 @@ namespace ClientApplication
             return result;
         }
 
-        public static bool Login(string login,string password)
+        public static bool Login(string login, string password)
         {
             writer.Write((int)OPERATIONS.LOGIN);
             writer.Write(login);
@@ -69,6 +69,20 @@ namespace ClientApplication
             return reader.ReadString();
         }
 
+        public static string Execute(string tablename, string[] args)
+        {
+            writer.Write((int)OPERATIONS.EXEC);
+            writer.Write(tablename);
+            writer.Write(args.Length);
+
+            foreach (string item in args)
+            {
+                writer.Write(item);
+            }
+
+            return reader.ReadString();
+        }
+
         public static bool Add(string tablename, string[] args)
         {
             writer.Write((int)OPERATIONS.ADD);
@@ -79,7 +93,6 @@ namespace ClientApplication
             {
                 writer.Write(item);
             }
-
 
             return reader.ReadBoolean();
         }

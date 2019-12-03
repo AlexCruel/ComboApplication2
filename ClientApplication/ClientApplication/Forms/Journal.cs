@@ -100,6 +100,7 @@ namespace ClientApplication
             if (ServerMananger.Add("[Журнал преподавателя]", new string[] { semester, date, group, teacher, student, discipline, formOfControl, mark }))
             {
                 MessageBox.Show("Данные успешно добавлены", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UpdateData();
             }
             else
             {
