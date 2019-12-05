@@ -107,5 +107,11 @@ namespace ClientApplication
                 MessageBox.Show("Сбой во время операции!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AverageMark form = new AverageMark();
+            form.Show();
+        }
     }
 }

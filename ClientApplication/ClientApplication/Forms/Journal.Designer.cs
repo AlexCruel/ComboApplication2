@@ -46,6 +46,7 @@
             this.labelManager = new System.Windows.Forms.Label();
             this.labelFaculty = new System.Windows.Forms.Label();
             this.labelID = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -233,11 +234,22 @@
             this.labelID.Text = "Дата";
             this.labelID.UseWaitCursor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(882, 401);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 37);
+            this.button1.TabIndex = 66;
+            this.button1.Text = "Средний балл";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Journal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1229, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.comboBoxMark);
             this.Controls.Add(this.comboBoxFC);
@@ -284,5 +296,6 @@
         private System.Windows.Forms.Label labelManager;
         private System.Windows.Forms.Label labelFaculty;
         private System.Windows.Forms.Label labelID;
+        private System.Windows.Forms.Button button1;
     }
 }

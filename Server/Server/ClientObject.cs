@@ -73,21 +73,8 @@ namespace Server
                                 string table = reader.ReadString();
                                 DataSet dst = new DataSet();
                                 SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table}", Program.CONNECTION_STRING);
-                             
-                                if (table == "Факультеты")
-                                    adapter.Fill(dst, "f");
-                                else if (table == "Группы")
-                                    adapter.Fill(dst, "g");
-                                else if (table == "Преподаватели")
-                                    adapter.Fill(dst, "t");
-                                else if (table == "Студенты")
-                                    adapter.Fill(dst, "st");
-                                else if (table == "Дисциплины")
-                                    adapter.Fill(dst, "disc");
-                                else
-                                    adapter.Fill(dst, "fc");
 
-                                writer.Write(dst.GetXml());
+                                SearchContexInfo(table, dst, adapter);
 
                                 break;
                             }
@@ -103,21 +90,22 @@ namespace Server
                                 }
 
                                 DataSet dst = new DataSet();
+                                SearchInfo(table, args, dst);
 
-                                if (table == "[St_AcPerformance]")
+                                break;
+                            }
+                        case 5:
+                            {
+                                string table = reader.ReadString();
+                                int length = reader.ReadInt32();
+                                string[] args = new string[length];
+
+                                for (int i = 0; i < length; i++)
                                 {
-                                    SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table} where Семестр = '{args[0]}' " +
-                                        $"and КодСтуд = '{args[1]}'", Program.CONNECTION_STRING);
-                                    adapter.Fill(dst);
-                                }
-                                else
-                                {
-                                    SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table} where Семестр = '{args[0]}' and КодГруппы = '{args[1]}' " +
-                                        $"and КодДисц = '{args[2]}'", Program.CONNECTION_STRING);
-                                    adapter.Fill(dst);
+                                    args[i] = reader.ReadString();
                                 }
 
-                                writer.Write(dst.GetXml());
+                                AverageScore(table, args);
 
                                 break;
                             }
@@ -130,6 +118,52 @@ namespace Server
                     break;
                 }
             }
+        }
+
+        private void AverageScore(string table, string[] args)
+        {
+            DataSet dst = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter($"select СрБалл from {table} where КодСтуд = '{args[0]}' " +
+            $"and КодДисц = '{args[1]}'", Program.CONNECTION_STRING);
+            adapter.Fill(dst);
+
+            writer.Write(dst.GetXml());
+        }
+
+        private void SearchContexInfo(string table, DataSet dst, SqlDataAdapter adapter)
+        {
+            if (table == "Факультеты")
+                adapter.Fill(dst, "f");
+            else if (table == "Группы")
+                adapter.Fill(dst, "g");
+            else if (table == "Преподаватели")
+                adapter.Fill(dst, "t");
+            else if (table == "Студенты")
+                adapter.Fill(dst, "st");
+            else if (table == "Дисциплины")
+                adapter.Fill(dst, "disc");
+            else
+                adapter.Fill(dst, "fc");
+
+            writer.Write(dst.GetXml());
+        }
+
+        private void SearchInfo(string table, string[] args, DataSet dst)
+        {
+            if (table == "[St_AcPerformance]")
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table} where Семестр = '{args[0]}' " +
+                    $"and КодСтуд = '{args[1]}'", Program.CONNECTION_STRING);
+                adapter.Fill(dst);
+            }
+            else
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table} where Семестр = '{args[0]}' and КодГруппы = '{args[1]}' " +
+                    $"and КодДисц = '{args[2]}'", Program.CONNECTION_STRING);
+                adapter.Fill(dst);
+            }
+
+            writer.Write(dst.GetXml());
         }
 
         private void AddOpertion(string table, int length, string[] args)

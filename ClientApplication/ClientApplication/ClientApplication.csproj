@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AverageMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AverageMark.Designer.cs">
+      <DependentUpon>AverageMark.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddFaculty.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="ServerMananger.cs" />
     <Compile Include="Forms\Specialty.cs">
       <SubType>Form</SubType>
@@ -127,6 +139,9 @@
     <Compile Include="Forms\StudPerformGroup.Designer.cs">
       <DependentUpon>StudPerformGroup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AverageMark.resx">
+      <DependentUpon>AverageMark.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddFaculty.resx">
       <DependentUpon>AddFaculty.cs</DependentUpon>
     </EmbeddedResource>

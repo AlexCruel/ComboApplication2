@@ -17,6 +17,7 @@ namespace ClientApplication
             ADD,
             SELECTCOLUMN,
             EXEC,
+            CALC,
             UPDATE
         }
 
@@ -95,6 +96,20 @@ namespace ClientApplication
             }
 
             return reader.ReadBoolean();
+        }
+
+        public static string Calculate(string tablename, string[] args)
+        {
+            writer.Write((int)OPERATIONS.CALC);
+            writer.Write(tablename);
+            writer.Write(args.Length);
+
+            foreach (string item in args)
+            {
+                writer.Write(item);
+            }
+
+            return reader.ReadString();
         }
     }
 }

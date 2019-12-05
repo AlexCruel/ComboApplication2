@@ -225,5 +225,11 @@ namespace ClientApplication
             StudPerformGroup form = new StudPerformGroup();
             form.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Report form = new Report();
+            form.Show();
+        }
     }
 }
