@@ -46,3 +46,5 @@ F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplicatio
 F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.StudPerform.resources
 F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.StudPerformGroup.resources
 F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.AverageMark.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.Report.resources
+F:\Учёба\Курсовые проекты\ComboApplication2\ClientApplication\ClientApplication\obj\Debug\ClientApplication.csproj.ResolveComReference.cache

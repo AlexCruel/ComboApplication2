@@ -61,7 +61,7 @@ namespace ClientApplication
             string discipline = comboBoxDisc.SelectedValue.ToString();
 
             DataSet dst = new DataSet();
-            dst.ReadXml(new StringReader(ServerMananger.Execute("[Disc_GrPerformance]", new string[] { semester, group, discipline })));
+            dst.ReadXml(new StringReader(ServerMananger.Execute("[Disc_GrPerformance]", new string[] { semester, group, discipline }, "StudPerformGroup")));
 
             if (dst.Tables.Count > 0)
             {

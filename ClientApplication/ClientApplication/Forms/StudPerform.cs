@@ -48,7 +48,7 @@ namespace ClientApplication
             string student = comboBoxStud.SelectedValue.ToString();
 
             DataSet dst = new DataSet();
-            dst.ReadXml(new StringReader(ServerMananger.Execute("[St_AcPerformance]", new string[] { semester, student })));
+            dst.ReadXml(new StringReader(ServerMananger.Execute("[St_AcPerformance]", new string[] { semester, student }, "StudPerform")));
 
             if (dst.Tables.Count > 0)
             {

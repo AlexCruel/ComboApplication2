@@ -83,14 +83,18 @@ namespace Server
                                 string table = reader.ReadString();
                                 int length = reader.ReadInt32();
                                 string[] args = new string[length];
+                                string text = reader.ReadString();
 
                                 for (int i = 0; i < length; i++)
                                 {
                                     args[i] = reader.ReadString();
                                 }
 
+                                Console.WriteLine(args[0]);
+                                Console.WriteLine(args[1]);
+
                                 DataSet dst = new DataSet();
-                                SearchInfo(table, args, dst);
+                                SearchInfo(table, args, text, dst);
 
                                 break;
                             }
@@ -148,12 +152,18 @@ namespace Server
             writer.Write(dst.GetXml());
         }
 
-        private void SearchInfo(string table, string[] args, DataSet dst)
+        private void SearchInfo(string table, string[] args, string text, DataSet dst)
         {
-            if (table == "[St_AcPerformance]")
+            if (table == "[St_AcPerformance]" && text == "StudPerform")
             {
                 SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table} where Семестр = '{args[0]}' " +
                     $"and КодСтуд = '{args[1]}'", Program.CONNECTION_STRING);
+                adapter.Fill(dst);
+            }
+            else if (table == "Report" && text == "Report")
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter($"select * from {table} where Семестр = '{args[0]}' " +
+                    $"and Группа = '{args[1]}'", Program.CONNECTION_STRING);
                 adapter.Fill(dst);
             }
             else

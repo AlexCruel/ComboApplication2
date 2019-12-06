@@ -70,11 +70,12 @@ namespace ClientApplication
             return reader.ReadString();
         }
 
-        public static string Execute(string tablename, string[] args)
+        public static string Execute(string tablename, string[] args, string text)
         {
             writer.Write((int)OPERATIONS.EXEC);
             writer.Write(tablename);
             writer.Write(args.Length);
+            writer.Write(text);
 
             foreach (string item in args)
             {
